@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(to right, rgb(255,190,152), rgb(254,213,188));
+}
+
+#first-para{
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+}
