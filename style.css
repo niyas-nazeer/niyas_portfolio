@@ -9,3 +9,7 @@ body {
 .container{
     height: 100vh;
 }
+.hr{
+    height: 5px;
+    width: 4em;
+}
