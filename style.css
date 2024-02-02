@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-image: linear-gradient(to right, #000e29, #0a1834);
     color: #cac0b3;
@@ -10,6 +15,7 @@ body {
     background-color: #001233 !important;
     color: #ff595a !important;
 }
+
 .nav-link{
     color:#cac0b3 !important;
 }
@@ -21,16 +27,30 @@ a:hover{
 #first-para{
     font-family: sans-serif;
 }
+
 #element{
     color: #cac0b3;
 }
-.container{
-    height: 100vh;
+
+.about-section{
+    height: 200vh;
+    margin-top: 80px !important;
 }
+
+.section:not(.about-section){
+    height: 100vh;
+    margin-top: 80px !important;
+}
+
+.getknow-sec{
+    margin-top: 60px;
+}
+
 .hr{
     height: 5px;
     width: 4em;
 }
+
 footer{
     height: 30vh;
 }

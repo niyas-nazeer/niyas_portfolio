@@ -30,18 +30,17 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto me-5">
 
-                    <a class="nav-link me-4" href="#">HOME</a>
-                    <a class="nav-link me-4" href="#">ABOUT</a>
-                    <a class="nav-link me-4" href="#">PROJECTS</a>
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link me-4" href="#name">HOME</a>
+                    <a class="nav-link me-4" href="#about">ABOUT</a>
+                    <a class="nav-link me-4" href="#projects">PROJECTS</a>
+                    <a class="nav-link" href="#contact">CONTACT</a>
 
                 </div>
             </div>
         </div>
     </nav>
 
-    <div id="name"
-        class="container text-center home-section d-flex flex-column align-items-center justify-content-center ">
+    <div id="name" class="container text-center home-section section d-flex flex-column align-items-center justify-content-center ">
         <div>
             <h3 class="fst-italic">
                 Hey, I'm
@@ -56,37 +55,45 @@
 
     </div>
 
-    <div class="container text-center d-flex flex-column align-items-center">
-        <div><h3 class="fw-bolder mt-5">ABOUT ME</h3></div>
-        <div class=" hr bg-secondary mt-2 rounded-pill"></div>
+    <div id="about" class="container text-center about-section section mb-5">
+        <div class="container d-flex justify-content-center">
+            <h3 class="fw-bolder mt-5">ABOUT ME</h3>
+           
+            <!-- <div class=" hr bg-secondary mt-2 rounded-pill"></div> -->
+        </div>
         <div>
             <p class="mt-5 fs-5 opacity-50">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
         </div>
-        <div class="row mt-5 grid column-gap-5">
-            <div class="col">
+        <div class="getknow-sec d-flex justify-content-between">
+            <div class="container selfintro-sec">
                 <h4 class="text-start fw-bolder">Get to know me!</h4>
-                <p class="text-start mt-5 opacity-75">I'm a passionate and aspiring <strong>Full Stack Web Developer,</strong> ready to embark on a journey of turning ideas into interactive, user-friendly web experiences.</p>
-                <p class="text-start opacity-75">My love for coding sparked during my academic years, where I explored various programming languages and discovered the fascinating world of web technologies. Since then, my curiosity and eagerness to learn have been the driving forces behind my pursuit of becoming a proficient developer.</p>
-                <p class="text-start opacity-75">As a Full Stack Web Developer, I thrive in both frontend and backend technologies. Crafting responsive and visually appealing user interfaces and  handling server-side logic and databases.  I am committed to creating seamless, end-to-end web solutions.</p>
-                <p class="text-start opacity-75">The ever-evolving nature of web development excites me, and I am dedicated to staying updated with the latest trends and technologies. I believe in the power of continuous learning, and I am always seeking new challenges to enhance my skills and broaden my knowledge.</p>
+                
+                <p class="text-start mt-4 opacity-75">
+                    I'm a passionate and aspiring <strong>Full Stack Web Developer,</strong> ready to embark on a journey of turning ideas into interactive, user-friendly web experiences.
+                    <br><br>My love for coding sparked during my academic years, where I explored various programming languages and discovered the fascinating world of web technologies. Since then, my curiosity and eagerness to learn have been the driving forces behind my pursuit of becoming a proficient developer.
+                    <br><br>As a Full Stack Web Developer, I thrive in both frontend and backend technologies. Crafting responsive and visually appealing user interfaces and  handling server-side logic and databases.  I am committed to creating seamless, end-to-end web solutions.
+                    <br><br>The ever-evolving nature of web development excites me, and I am dedicated to staying updated with the latest trends and technologies. I believe in the power of continuous learning, and I am always seeking new challenges to enhance my skills and broaden my knowledge.
+                </p>
             </div>
-            <h4 class="col text-start fw-bolder">My Skills</h4>
+            <div class="container skills-section ms-5">
+                <h5 class="text-start fw-bolder">My Skills</h5>
+            </div>
         </div>
-    </div>
-
-    <div class="container text-center d-flex flex-column align-items-center">
-        <div>
-        <h3 class="fw-bolder mt-5">PROJECTS</h3>
-        </div>
-        <div class=" hr bg-secondary mt-2 rounded-pill"></div>
-        <h1 id="project"  class="fw-bolder mt-5"></h1>
+        
     </div>
     
-    <div class="container text-center d-flex flex-column align-items-center">
+    <div id="projects" class="container project-section section text-center">
+        <h3 class="fw-bolder mt-5">PROJECTS</h3>
+        <h1 id="project"  class="fw-bolder mt-5"></h1>
+        <!-- <div class=" hr bg-secondary mt-2 rounded-pill"></div> -->
+        
+    </div>
+    
+    <div id="contact" class="container text-center  contact-section section d-flex flex-column align-items-center">
         <div>
         <h3 class="fw-bolder mt-5">CONTACT</h3>
         </div>
-        <div class=" hr bg-secondary mt-2 rounded-pill"></div>
+        <!-- <div class=" hr bg-secondary mt-2 rounded-pill"></div> -->
     </div>
 
     <footer class="bg-dark">
@@ -94,17 +101,18 @@
     </footer>
 
     <script>
+        
         new TypeIt("#element", {
-        strings: ["NIYAS NAZEER","I'M A FULL STACK DEVELOPER"],
-        speed: 100,
-        loop: false,
-        }).go();
+    strings: ["NIYAS NAZEER","I'M A FULL STACK DEVELOPER"],
+    speed: 100,
+    loop: false,
+    }).go();
 
-        new TypeIt("#project", {
-        strings: ["Coming Soon .....!"],
-        speed: 100,
-        loop: true,
-        }).go();
+    new TypeIt("#project", {
+    strings: ["Coming Soon .....!"],
+    speed: 100,
+    loop: true,
+    }).go();
 
     </script>
 </body>
