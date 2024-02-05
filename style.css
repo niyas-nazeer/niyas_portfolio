@@ -34,16 +34,20 @@ a:hover{
 
 .about-section{
     height: 200vh;
-    margin-top: 80px !important;
+    padding-top: 50px !important;
 }
 
 .section:not(.about-section){
     height: 100vh;
-    margin-top: 80px !important;
+    padding-top: 50px !important;
 }
 
 .getknow-sec{
     margin-top: 60px;
+}
+
+.para{
+    text-align: justify !important;
 }
 
 .hr{
@@ -52,5 +56,8 @@ a:hover{
 }
 
 footer{
-    height: 30vh;
+    height: 25vh;
+}
+footer a{
+    color: #cac0b3;
 }
