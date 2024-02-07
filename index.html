@@ -90,17 +90,17 @@
             </div>
             <div class="container skills-section ms-5">
                 <h5 class="text-start fw-bolder">My Skills</h5>
-                <div class="">
-                    <div>HTML</div>
-                    <div>CSS</div>
-                    <div>Bootstrap</div>
-                    <div>JavaScript</div>
-                    <div>jQuery</div>
-                    <div>Python</div>
-                    <div>Django</div>
-                    <div>MySQL</div>
-                    <div>Git</div>
-                    <div>GitHub</div>
+                <div class="d-flex flex-wrap mt-5 opacity-75" id="skill-box">
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">Bootstrap</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">jQuery</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Django</div>
+                    <div class="skill-item" id="mysql">MySQL</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">GitHub</div>
                 </div>
             </div>
         </div>
@@ -114,13 +114,40 @@
 
     </div>
 
-    <div id="contact" class="container text-center  contact-section section d-flex flex-column align-items-center">
+    <!-- <div id="contact" class="container text-center  contact-section section d-flex flex-column align-items-center">
         <div>
             <h3 class="fw-bolder mt-5">CONTACT</h3>
         </div>
-        <!-- <div class=" hr bg-secondary mt-2 rounded-pill"></div> -->
-    </div>
+    </div> -->
 
+    <div class="container contact-section section" id="contact">
+        <h3 class="fw-bolder heading text-center">CONTACT</h3>
+        <div class="container d-flex justify-content-between">
+            <div class="container left-sec-para mt-5" style="width: 30vw;">
+                <p class="fs-4">Let's Chat <br> Tell me about your <br>project</p>
+                <p style="font-size: 1rem;">Let's Create something together &#129311;</p>
+                <div class="mail-box d-flex justify-content-center align-items-center ps-3 ms-4">
+                    <div class="mail-icon d-flex justify-content-center align-items-center">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>                    
+                    <div>
+                        <p class="">mail me at <a href="mailto:"></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container msg-form mt-4" style="width: 70vw;">
+                <div class="form-heading">Send us a message &#128640;</div>
+                <div class="form mt-3">
+                    <input type="text" class="form-control mb-2" placeholder="Full name*" style="width: 324px;">
+                    <input type="email" class="form-control mb-2" placeholder="Email address*" style="width: 324px;">
+                    <input type="text" class="form-control mb-3" placeholder="Subject(optional)" style="width: 324px;">
+                    <label for="forTextarea" class="form-label">Tell us about your project*</label>
+                    <textarea class="form-control mb-3" id="forTextarea" cols="5" rows="5" style="width: 324px;"></textarea>
+                    <button class="btn btn-primary" type="button" >Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <hr>
 
     <footer class="container-fluid">
@@ -138,7 +165,7 @@
         </div>
 
         <div class="container d-flex align-items-end justify-content-center mt-5">
-            <div class="mt-5 fs-6">
+            <div class="fs-6">
                 <i class="bi bi-c-circle me-1"></i>Copyright 2024. made by <a href="">Niyas Nazeer</a>
             </div>
         </div>
