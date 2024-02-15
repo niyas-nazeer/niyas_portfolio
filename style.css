@@ -170,7 +170,7 @@ footer a{
 
     .msg-form{
         width:19rem !important;
-        margin-bottom: 5rem !important;
+        /* margin-bottom: 5rem !important; */
     }
 
 }
