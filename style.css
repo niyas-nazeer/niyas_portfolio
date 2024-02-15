@@ -39,18 +39,28 @@ a:hover{
 
 .section:not(.about-section){
     height: 100vh;
-    padding-top: 50px !important;
+    padding-top: 100px !important;
+}
+
+.section{
+    word-spacing: 0.10rem;
+    line-height: 1.4rem;
+    text-align: justify;
 }
 
 .getknow-sec{
     margin-top: 3.75rem;
 }
 
-#skill-box{
+.para{
+    text-align: justify !important;
+}
+
+.skill-box{
     display: flex;
     flex-wrap: wrap;
-    box-sizing: inherit;
 }
+
 
 .skill-item{
     background: #cac0b3;
@@ -61,34 +71,13 @@ a:hover{
     padding: 1rem 2rem;
 }
 
-.para{
-    text-align: justify !important;
-}
-
-.msg-form{
-    background-color:rgb(23, 33, 54);
-    padding: 1rem !important;
-    width: 22.25rem !important;
-    border-radius: 0.9375rem;
-}
-
-.form-heading{
-    font-size: 1.3rem;
-    color: whitesmoke;
-}
-input,textarea{
-    background-color:rgb(23, 33, 54) !important;
-    border-color: rgb(148 163 184) !important;
-    color: whitesmoke !important;
-}
-
-input::placeholder{
-    color: rgb(148 163 184) !important;
+.contact-heading{
+    margin-bottom: 80px !important;
 }
 
 .mail-box{
     font-size: 0.9375rem;
-    width: 15.625rem;
+    width: 16.625rem;
     height: 3.75rem;
     line-height: 1rem;
     gap: 0.625rem;
@@ -106,12 +95,82 @@ input::placeholder{
     height: 1.5625rem;
     border-radius: 0.4375rem;
     color: rgb(15 23 42);
-    background-color: whitesmoke;
+    background-color: #cac0b3;
 }
 
-footer{
-    height: 25vh;
+.msg-form{
+    background-color:rgb(23, 33, 54);
+    padding: 1rem !important;
+    width: 22.25rem !important;
+    border-radius: 0.9375rem;
 }
+
+.form-heading{
+    font-size: 1.3rem;
+    color: #cac0b3;
+}
+input,textarea{
+    background-color:rgb(23, 33, 54) !important;
+    border-color: rgb(148 163 184) !important;
+    color: #cac0b3 !important;
+}
+
+input::placeholder{
+    color: rgb(148 163 184) !important;
+}
+
+.btn{
+    color: #cac0b3;
+}
+
 footer a{
     color: #cac0b3;
+}
+
+.icons i{
+    font-size: 1.2rem;
+}
+
+.icons i{
+    color: #cac0b3;
+    transition: color 0.1s ease-in-out;
+}
+
+.icons i:hover{
+    color:#ff595a;
+}
+/* Media query goes here */
+
+@media (max-width:576px){
+    .skill-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .skills-section{
+        margin-top: 5rem !important;
+    }
+
+    .skills-section h4 , .getknow-sec h4{
+        text-align: center !important;
+    }
+
+    .about-section{
+        height: 240vh;
+    }
+
+    .contact-section{
+        height: 130vh !important;
+    }
+
+    .left-sec-para{
+        margin-left: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .msg-form{
+        width:19rem !important;
+        margin-bottom: 5rem !important;
+    }
+
 }
