@@ -24,10 +24,6 @@ a:hover{
     color: #ff595a !important;
 }
 
-#first-para{
-    font-family: sans-serif;
-}
-
 #element{
     color: #cac0b3;
 }
@@ -145,6 +141,7 @@ footer a{
     .skill-box{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        margin-left: 1rem;
     }
 
     .skills-section{
@@ -161,16 +158,16 @@ footer a{
 
     .contact-section{
         height: 130vh !important;
+        margin-bottom: 5rem !important;
     }
 
     .left-sec-para{
-        margin-left: 4rem;
+        margin-left: 0.5rem;
         margin-bottom: 5rem;
     }
 
     .msg-form{
         width:19rem !important;
-        /* margin-bottom: 5rem !important; */
     }
 
 }
