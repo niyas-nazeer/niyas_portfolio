@@ -6,6 +6,6 @@ new TypeIt("#element", {
 
     new TypeIt("#project", {
     strings: ["Coming Soon .....!"],
-    speed: 75,
+    speed: 50,
     loop: true,
     }).go();
