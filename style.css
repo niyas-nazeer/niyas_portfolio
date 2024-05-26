@@ -161,3 +161,18 @@ footer a{
     }
 
 }
+
+@media (min-width:576px) and (max-width:767px){
+
+    .selfintro-sec{
+        margin-bottom: 3rem !important;
+    }
+
+    .about-section{
+        margin-bottom: 20rem !important;
+    }
+    
+    .contact-section{
+        margin-bottom: 13rem !important;
+    }
+}

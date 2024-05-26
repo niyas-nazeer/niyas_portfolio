@@ -9,3 +9,20 @@ new TypeIt("#element", {
     speed: 50,
     loop: true,
     }).go();
+
+    
+           // For Navbar fading
+
+ // Get all the navigation links
+ const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+ // Add click event listener to each navigation link
+ navLinks.forEach(link => {
+     link.addEventListener('click', () => {
+         // Collapse the navbar when a link is clicked
+         const navbarCollapse = document.querySelector('.navbar-collapse');
+         if (navbarCollapse.classList.contains('show')) {
+             navbarCollapse.classList.remove('show');
+         }
+     });
+ });
