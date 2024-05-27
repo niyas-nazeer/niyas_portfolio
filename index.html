@@ -129,14 +129,17 @@
             </div>
 
             <div data-aos="flip-right" class="col-lg-8 col-sm-12 container msg-form mt-4">
-                <div class="form-heading">Send us a message &#128640;</div>
+                <div class="form-heading">Send me a message &#128640;</div>
                 <div class="form mt-3">
-                    <input type="text" class="form-control mb-2" placeholder="Name*">
-                    <input type="email" class="form-control mb-2" placeholder="Email address*">
-                    <input type="text" class="form-control mb-3" placeholder="Subject(optional)">
-                    <label for="forTextarea" class="form-label">Tell us about your project*</label>
-                    <textarea class="form-control mb-3" id="forTextarea" cols="5" rows="5"></textarea>
-                    <button class="btn btn-primary" type="button">Send message</button>
+                    <input type="text" class="form-control mb-2" placeholder="Name*" id="name" autocomplete="off">
+                    <div class="error-text">Enter the name</div>
+                    <input type="email" class="form-control mb-2" placeholder="Email address*" id="email" autocomplete="off">
+                    <div class="error-text">Enter the email address</div>
+                    <input type="text" class="form-control mb-3" placeholder="mobile number*" id="mobile" autocomplete="off">
+                    <div class="error-text">Enter the mobile number</div>
+                    <textarea class="form-control mb-3" id="message" placeholder="Message*" autocomplete="off" cols="5" rows="5"></textarea>
+                    <div class="error-text">Message Required</div>
+                    <button class="btn btn-primary" type="submit">Send message</button>
                 </div>
             </div>
         </div>

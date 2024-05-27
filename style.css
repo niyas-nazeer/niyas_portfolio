@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 body {
-    background-image: linear-gradient(to right, #000e29, #0a1834);
+    background-color: rgb(15, 23, 42);
     color: #cac0b3;
     font-family: 'Montserrat', sans-serif;
 }
 
 .navbar,.navbar-brand{
-    background-color: #001233 !important;
+    background-color: rgb(21, 31, 51) !important;
     color: #ff595a !important;
 }
 
@@ -103,6 +103,13 @@ input,textarea{
 
 input::placeholder{
     color: rgb(148 163 184) !important;
+}
+
+.error-text{
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
 }
 
 .btn{
