@@ -1,12 +1,12 @@
 new TypeIt("#element", {
     strings: ["NIYAS NAZEER"," ","I'M A FULL STACK DEVELOPER"],
-    speed: 75,
+    speed: 110,
     loop: false,
     }).go();
 
     new TypeIt("#project", {
     strings: ["Coming Soon .....!"],
-    speed: 50,
+    speed: 120,
     loop: true,
     }).go();
 
