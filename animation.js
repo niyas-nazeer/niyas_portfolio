@@ -30,14 +30,12 @@ new TypeIt("#element", {
 //  Contact Message box
 
 const form = document.querySelector("form");
-const nm = document.getElementById("name")
-const em = document.getElementById("email")
-const mob = document.getElementById("mobile")
-const sub = document.getElementById("subject")
-const mess = document.getElementById("message")
+const nm = document.getElementById("name");
+const em = document.getElementById("email");
+const mess = document.getElementById("message");
 
 function sendEmail() {
-    const bodyMessage = `Name: ${nm.value}<br> Email: ${em.value}<br> Mobile: ${mob.value}<br> Message: ${mess.value}`;
+    const bodyMessage = `Name: ${nm.value}<br> Email: ${em.value}<br> Message: ${mess.value}`;
     
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -45,10 +43,18 @@ function sendEmail() {
         Password : "9F00F8A92E57A51B14714ACA45A84FB0287A",
         To : 'niyasnazeer.in@gmail.com',
         From : "niyasnazeer.in@gmail.com",
-        Subject : sub.value,
+        Subject : nm.value,
         Body : bodyMessage
     }).then(
-      message => alert(message)
+        message => {
+            if (message == "OK") {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Message sent successfully!",
+                    icon: "success"
+                });
+            }
+        }
     );
 } 
 
